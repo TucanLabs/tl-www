@@ -1,0 +1,192 @@
+/* RESSET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FONTS */
+@font-face {
+  font-family: "TL Sans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("fonts/TLSans.otf");
+}
+@font-face {
+  font-family: "TL Sans";
+  font-weight: 800;
+  font-style: normal;
+  src: url("fonts/TLSansBd.otf");
+}
+@font-face {
+  font-family: "TL Mono";
+  font-weight: normal;
+  font-style: normal;
+  src: url("fonts/TLMono.ttf");
+}
+@font-face {
+  font-family: "TL Serif";
+  font-weight: 200;
+  src: url("fonts/TLSerifLt.otf");
+}
+@font-face {
+  font-family: "TL Serif";
+  font-weight: 600;
+  src: url("fonts/TLSerifSbd.otf");
+}
+
+/* MAIN */
+body {
+  font-family: "TL Sans", sans-serif;
+  background: #ffef91;
+  padding: 50px 75px;
+  color: #111;
+}
+header {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+header a {
+  color: #111;
+  font-size: 24px;
+  text-decoration: none;
+  font-family: "TL Sans", sans-serif;
+  font-weight: 800;
+}
+hr.short-rule {
+  border: none;
+  border-bottom: 4px solid #ff4731;
+  width: 30px;
+}
+header .bullets {
+  font-family: "TL Mono", monospace;
+  font-size: 16px;
+}
+header .bullets .spacer {
+  margin: 0 20px;
+}
+p.heading {
+  font-family: "TL Serif", serif;
+  font-weight: 200;
+  font-size: 58px;
+  line-height: 1.5;
+  margin-bottom: 58px;
+  padding: 0 30px;
+  text-align: center;
+}
+p.heading strong {
+  font-family: "TL Serif", serif;
+  font-weight: 600;
+}
+.section-spacer {
+  display: flex;
+  justify-content: center;
+}
+.section-spacer hr.short-rule {
+  margin-bottom: 30px;
+}
+.cta {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.btn.btn-outline {
+  color: #ff4731;
+  font-family: "TL Sans", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  text-decoration: none;
+  padding: 20px 60px;
+  border: 6px solid #ff4731;
+  transition: all 250ms;
+  text-align: center;
+}
+.btn.btn-outline:hover {
+  background: #ff4731;
+  color: #ffef91;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 1200px) {
+  body {
+    padding: 40px 60px;
+  }
+  header {
+    margin-bottom: 50px;
+  }
+  p.heading {
+    font-size: 52px;
+    margin-bottom: 30px;
+  }
+  .btn.btn-outline {
+    font-size: 24px;
+    border: 5px solid #ff4731;
+  }
+  .cta {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding: 30px 50px;
+  }
+  p.heading {
+    font-size: 48px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 960px) {
+  header a {
+    font-size: 22px;
+  }
+  header .bullets {
+    font-size: 14px;
+  }
+  header .bullets .spacer {
+    margin: 0 10px;
+  }
+  p.heading {
+    font-size: 38px;
+    padding: 0 10px;
+  }
+  .btn.btn-outline {
+    font-size: 22px;
+    padding: 15px 50px;
+    border: 4px solid #ff4731;
+  }
+}
+
+@media (max-width: 896px) {
+  body {
+    padding: 25px 40px;
+  }
+  header .bullets {
+    font-size: 12px;
+  }
+  header .bullets .spacer {
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 30px;
+  }
+  header {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+  hr.short-rule {
+    margin: 0 auto;
+  }
+  header .bullets {
+    display: none;
+  }
+  p.heading {
+    font-size: 32px;
+  }
+}
